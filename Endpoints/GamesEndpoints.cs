@@ -57,6 +57,7 @@ namespace WebApplication1.Endpoints
 
             group.MapPost("/", (CreateGameDto newGame) =>
             {
+
                 GameDto game = new(
                     games.Count + 1,
                     newGame.Name,
