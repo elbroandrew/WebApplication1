@@ -39,7 +39,7 @@ namespace WebApplication1.Endpoints
             )
         ];
 
-        public static WebApplication MapGamesEndpoints(this WebApplication app)
+        public static RouteGroupBuilder MapGamesEndpoints(this WebApplication app)
         {
             var group = app.MapGroup("/games").WithParameterValidation();
 
@@ -104,7 +104,7 @@ namespace WebApplication1.Endpoints
 
             });
 
-            return app;
+            return group;
         }
 
     }
